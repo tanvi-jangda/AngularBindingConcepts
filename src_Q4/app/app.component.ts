@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Assignment7';
+
+  data:string="Marvellous Infosystems";
+
+  public btnUpperClick()
+  {
+    this.data=this.data.toUpperCase();
+  }
+
+  public btnLowerClick()
+  {
+    this.data=this.data.toLowerCase();
+  }
+}
